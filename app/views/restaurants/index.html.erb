@@ -1,0 +1,7 @@
+<h1>Restuarants in your zone</h1>
+<ul>
+<%  @restaurants.each do |restaurant| %>
+  <li><strong><%= restaurant.name %></strong> <%= restaurant.address %></li>
+  <%= link_to "Delete", restaurant_path(restaurant) %>
+<% end %>
+</ul>
